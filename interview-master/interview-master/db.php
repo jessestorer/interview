@@ -8,5 +8,5 @@
   try {
     $pdo = new PDO($dsn, $username, $password);
   } catch(PDOException $e) {
-    die("ERROR: Could not connect. " . $exception->getMessage());
+    die("ERROR: Could not connect. " . $e->getMessage());
   }
